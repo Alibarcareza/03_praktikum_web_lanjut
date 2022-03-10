@@ -18,6 +18,7 @@ class ProgramController extends Controller
         return view('program.kunjunganIndustri');
     }
      public function program(){
-        return view('program');
+        return view('program')
+        ->with('title','Program Kita');
     }
 }

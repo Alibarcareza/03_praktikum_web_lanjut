@@ -8,25 +8,7 @@ use App\Http\Controllers\ProgramController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HometController;
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
-// Auth::routes();
-
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-//home
 Route::get('/home', [App\Http\Controllers\HalamanController::class, 'index'])->name('home');
 //product-route biasa
 Route::get('/product', [ProductController::class, 'product'])->name('product');
@@ -46,10 +28,10 @@ Route::prefix("Program")->group(function(){
     Route::get("/kunjungan-industri", [ProgramController::class, 'kunjungan_industri'])->name('kunjungan_industri');
 });
 //news-route
-Route::get('/news/{berita?}', [NewsController::class, 'news'])->name('news');
+Route::get('/news', [NewsController::class, 'news'])->name('news');
 //about-route
 Route::get('/about-us', [AboutController::class, 'about'])->name('about');
 //contact-route resource
 Route::resource('/contact-us', ContactController::class)->only([
-    'index', 'me'
-]);
+    'index', 'me'])
+;

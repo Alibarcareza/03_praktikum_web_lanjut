@@ -22,6 +22,7 @@ class ProductController extends Controller
         return view('product.kolak-kids-songs');
     }
      public function product(){
-        return view('product');
+        return view('product')
+        ->with('title','Product Kita');
     }
 }

@@ -1,35 +1,96 @@
 @extends('master.master')
 
 @section('content')
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Home</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-</head>
-<body>
+<section class="project section-padding" id="project">
+          <div class="container-fluid">
+               <div class="row">
 
-<div class="jumbotron">
-  <div class="container">
-    <h1 class="text-center"><b>Selamat Datang Di Website Saya</h1> </b>    
-  </div>
-</div>
-<div class="card bg-primary">
-    <div class="card-body">
-      <p class="card-text text-center"><b>Product</p></b>
-      <ul>
-          <li>kolak-kids-songs</li>
-          <li>marbel-and-friends-kids-game</li>
-          <li>marbel-edu-game</li>
-          <li>riri-story-books</li>
-      </ul>
-    </div>
-  </div>
-</body>
-</html>
+                    <div class="col-lg-12 col-12">
+
+                        <h2 class="mb-5 text-center" data-aos="fade-up">
+                            Please take a look through our
+                            <strong>featured Digital Trends</strong>
+                        </h2>
+
+                         <div class="owl-carousel owl-theme" id="project-slide">
+                              <div class="item project-wrapper" data-aos="fade-up" data-aos-delay="100">
+                                   <img src="images/project/project-image01.jpg" class="img-fluid" alt="project image">
+
+                                   <div class="project-info">
+                                        <small>Marketing</small>
+
+                                        <h3>
+                                             <a href="project-detail.html">
+                                                  <span>Sweet Go Agency</span>
+                                                  <i class="fa fa-angle-right project-icon"></i>
+                                             </a>
+                                        </h3>
+                                   </div>
+                              </div>
+
+                              <div class="item project-wrapper" data-aos="fade-up">
+                                   <img src="images/project/project-image02.jpg" class="img-fluid" alt="project image">
+
+                                   <div class="project-info">
+                                        <small>Website</small>
+
+                                        <h3>
+                                             <a href="project-detail.html">
+                                                  <span>Smart Ladies</span>
+                                                  <i class="fa fa-angle-right project-icon"></i>
+                                             </a>
+                                        </h3>
+                                   </div>
+                              </div>
+
+                              <div class="item project-wrapper" data-aos="fade-up">
+                                   <img src="images/project/project-image03.jpg" class="img-fluid" alt="project image">
+
+                                   <div class="project-info">
+                                        <small>Branding</small>
+
+                                        <h3>
+                                             <a href="project-detail.html">
+                                                  <span>Shoes factory</span>
+                                                  <i class="fa fa-angle-right project-icon"></i>
+                                             </a>
+                                        </h3>
+                                   </div>
+                              </div>
+
+                              <div class="item project-wrapper" data-aos="fade-up">
+                                   <img src="images/project/project-image04.jpg" class="img-fluid" alt="project image">
+
+                                   <div class="project-info">
+                                        <small>Social Media</small>
+
+                                        <h3>
+                                             <a href="project-detail.html">
+                                                  <span>Race Bicycle</span>
+                                                  <i class="fa fa-angle-right project-icon"></i>
+                                             </a>
+                                        </h3>
+                                   </div>
+                              </div>
+
+                              <div class="item project-wrapper" data-aos="fade-up">
+                                   <img src="images/project/project-image05.jpg" class="img-fluid" alt="project image">
+
+                                   <div class="project-info">
+                                        <small>Video</small>
+
+                                        <h3>
+                                             <a href="project-detail.html">
+                                                  <span>Ultimate HealthCare</span>
+                                                  <i class="fa fa-angle-right project-icon"></i>
+                                             </a>
+                                        </h3>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
 @endsection

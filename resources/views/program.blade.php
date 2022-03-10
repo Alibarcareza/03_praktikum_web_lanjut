@@ -1,35 +1,34 @@
 @extends('master.master')
 
 @section('content')
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Home</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-</head>
-<body>
+<section class="testimonial section-padding">
+          <div class="container">
+               <div class="row">
 
-<div class="jumbotron">
-  <div class="container">
-    <h1 class="text-center"><b>Selamat Datang Di Website Saya</h1> </b>    
-  </div>
-</div>
+                    <div class="col-lg-6 col-md-5 col-12">
+                        <div class="contact-image" data-aos="fade-up">
 
-<div class="card bg-warning">
-    <div class="card-body">
-      <p class="card-text text-center"><b>Program</p></b>
-      <ul>
-          <li>Karir</li>
-          <li>Magang</li>
-          <li>Kunjungan Industri</li>
-      </ul>
-    </div>
-  </div>
-</body>
-</html>
+                          <img src="images/female-avatar.png" class="img-fluid" alt="website">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-7 col-12">
+                      <h4 class="my-5 pt-3" data-aos="fade-up" data-aos-delay="100">Client Testimonials</h4>
+
+                      <div class="quote" data-aos="fade-up" data-aos-delay="200"></div>
+
+                      <h2 class="mb-4" data-aos="fade-up" data-aos-delay="300">Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo.</h2>
+
+                      <p data-aos="fade-up" data-aos-delay="400">
+                        <strong>Mary Zoe</strong>
+
+                        <span class="mx-1">/</span>
+
+                        <small>Digital Agency (CEO)</small>
+                      </p>
+                    </div>
+
+               </div>
+          </div>
+     </section>
 @endsection

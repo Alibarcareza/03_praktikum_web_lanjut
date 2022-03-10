@@ -6,7 +6,8 @@ use Illuminate\Http\Request;
 
 class NewsController extends Controller
 {
-    public function news($berita){
-        return view('news', compact('berita'));
+    public function news(){
+        return view('news')
+        ->with('title','News');
     }
 }
