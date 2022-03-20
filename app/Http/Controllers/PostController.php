@@ -8,7 +8,7 @@ use App\Models\Post;
 class PostController extends Controller
 {
     public function product(){
-        $allproduct = Post::all();
+        $allproduct = Product::all();
 
         return view('product')
         ->with('title','Product Kita')
